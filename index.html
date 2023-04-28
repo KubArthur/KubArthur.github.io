@@ -1,2 +1,356 @@
-# KubArthur.github.io
-Portfolio
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Arthur Kubiak</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a></a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Arthur Kubiak.</span></h1>
+        <h2 class="about__role">A student in engenering school.</h2>
+        <p class="about__desc">
+          Student in the third year of engineering school, computer specialty.
+          I'm in touch with developpement generaly speaking, frontend as
+          preference but I know the backend's thematics.
+        </p>
+
+        <p class="about__desc">
+          Right now, I am looking for an internship from September to December,
+          which concerns software development, network systems, in nothern
+          countries. It will aim to apply my knowledge, to enrich it, and to
+          validate my fourth year.
+        </p>
+
+        <div class="about__contact center">
+          <a href="cv_kubiak_arthur.pdf" download="">
+            <span class="btn btn--outline">CV</span>
+          </a>
+
+          <a
+            href="https://github.com/KubArthur"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/arthur-kubiak-2aa8bb223"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Notification Center</h3>
+            <p class="project__description">
+              To allow customers to be notified in real time of anomalies
+              present on their infrastructures, the start-up DiagRAMS
+              Technologies wanted to set up a notification center in their WEB
+              software solution. This idea applies to anomalies, and to any
+              other event related to the application. The goal is to set up a
+              notification center, and to log notifications from the
+              application. With the help of the Tech Lead, the objective was to
+              develop new interfaces using the Next.js framework and the
+              TypeScript programming language. It was also necessary to think
+              about creating API points to link the Back to the Front.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Next.js</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Elasticsearch</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Systems Programmation</h3>
+            <p class="project__description">
+              Our team has just joined the software publisher ProSoft. Below the
+              responsibility of the DSI, we have the responsibility of managing
+              the “***EasySave***” project which consists in developing software
+              for backup under 3 versions. During this project, our team will
+              have to ensure the development, management of major versions and
+              minor, but also documentation for users and customer support. To
+              guarantee a resumption of our work by other teams, management
+              requires us to work within the compliance with the following
+              constraints: Visual Studio 2019, GIT, UML, C# language, etc, … We
+              must conduct this project in such a way as to reduce the
+              development costs of future versions and above all to be able to
+              react quickly to the possible rise of a dysfunction.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C#</li>
+              <li class="project__stack-item">#Net</li>
+              <li class="project__stack-item">socket</li>
+              <li class="project__stack-item">OOP</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Web development</h3>
+            <p class="project__description">
+              The objective of this project is to create a site to facilitate
+              orientation of new students in their search for internships by
+              grouping together all the internship offers to which former
+              students have already applied or just referenced all the known
+              offers of the school for example. The offers of internships will
+              be listed and recorded by skills, which will allow the student to
+              find an internship related to his profile. The application will
+              provide different interfaces and features for different profiles
+              of users. There will be several types of profiles of users who
+              will be the administrator, the delegate, the pilot of promotion
+              and the student. Feature categories expected are role management,
+              business management, the management of internship offers and the
+              management of applications. Depending on the user profile, the
+              latter will be able to access some services and not others. Only
+              the administrator has access to all the features offered by the
+              platform.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">Laravel</li>
+              <li class="project__stack-item">PHP</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">HTML</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>networks and systems</h3>
+            <p class="project__description">
+              The mayor of Funkytown wants to support a digital policy to
+              businesses in the city. This help comes to the right moment for
+              us, the ESN eXia, who have just established themselves in the
+              city. Many contracts have been won thanks to this support policy.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">CISCO</li>
+              <li class="project__stack-item">CCNA</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>OOP</h3>
+            <p class="project__description">
+              During this part of the project, our objective is to design UML
+              diagrams as well as a database that will allow us to better
+              preview our project. To start this at better, we will also define
+              our work environment complete to be able to create the code of the
+              application. For this do, we will rely on the functional
+              specifications which were provided to us by our client in the
+              specifications loads.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C++</li>
+              <li class="project__stack-item">#Net</li>
+              <li class="project__stack-item">SQL</li>
+              <li class="project__stack-item">OOP</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Embedded systems</h3>
+            <p class="project__description">
+              We embody a Start-up that is entrusted with a project, the
+              Worldwide Weather Watcher Project. Indeed, our client, the Agency
+              International for Meteorological Vigilance, wishes to equip
+              monitoring vessels of an on-board weather station for prevent the
+              formation of cyclones or other types of disasters natural. The
+              project therefore consists of creating a device making it possible
+              to carry out measurements at sea on different settings. It must be
+              simple, effective and usable by a member of the crew, so we will
+              provide a guide of use.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C-Arduino</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>BDD</h3>
+            <p class="project__description">
+              In the previous deliverable we had set up the structure from our
+              database. However, we had to wait for the tutors' remarks to find
+              out if our structure met the customer need or if it could be
+              further optimized. In more than that, We have to produce the 16
+              mandatory queries in view of the defense They must be fully
+              functional regardless of the context in relation to the date today
+              or otherwise. You should also think about creating procedure in
+              order to enter the data more easily in the different tables in our
+              database, or to delete, edit.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SQL</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Escape No Game</h3>
+            <p class="project__description">
+              In the Escape No Game project, you are asked to imagine a solution
+              allowing us to save an agent in difficulty, then to create a
+              prototype of our solution. In this deliverable, we we will focus
+              on creating our signal and on realization of the filter allowing
+              to block the audible signals. #II. **Context** Following a problem
+              that led to the loss of an agent, the AIL3C agency seeks to
+              develop a solution to ensure communication with agents in
+              difficulty. For this, we will take a situation such as a blocked
+              agent, in a room with only a microphone connected to the network,
+              please communicate with the outside.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Laravel</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">Next.js</li>
+          <li class="skills__list-item btn btn--plain">PHP</li>
+          <li class="skills__list-item btn btn--plain">Elasticsearch</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">UML</li>
+          <li class="skills__list-item btn btn--plain">OOP</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Jest</li>
+        </ul>
+      </section>
+
+      <!-- certifications -->
+      <section class="section contact center" id="certifications">
+        <h2 class="section__title">Certifications</h2>
+        <ul class="certifications__list">
+          <li class="certifications__list-item btn btn--plain">CISCO CCNA 1</li>
+          <li class="certifications__list-item btn btn--plain">
+            ANSSI Cybersecurity MOOC
+          </li>
+          <li class="certifications__list-item btn btn--plain">CACES 1</li>
+        </ul>
+      </section>
+
+      <!-- hobbies -->
+      <section class="section contact center" id="hobbies">
+        <h2 class="section__title">Hobbies</h2>
+        <ul class="hobbies__list">
+          <li class="hobbies__list-item btn btn--plain">Video Games</li>
+          <li class="hobbies__list-item btn btn--plain">RPG</li>
+          <li class="hobbies__list-item btn btn--plain">Warhammer</li>
+          <li class="hobbies__list-item btn btn--plain">Star Sars</li>
+          <li class="hobbies__list-item btn btn--plain">
+            Lord Of The Rings
+          </li>
+          <li class="hobbies__list-item btn btn--plain">Modding</li>
+          <li class="hobbies__list-item btn btn--plain">
+            Classical Music
+          </li>
+          <li class="hobbies__list-item btn btn--plain">Sport</li>
+          <li class="hobbies__list-item btn btn--plain">IT</li>
+          <li class="hobbies__list-item btn btn--plain">Landscape</li>
+          <li class="hobbies__list-item btn btn--plain">
+            French History
+          </li>
+          <li class="hobbies__list-item btn btn--plain">
+            Antiquity History
+          </li>
+          <li class="hobbies__list-item btn btn--plain">Myths</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:arthur.kubiak@viacesi.fr">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>_</div>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
