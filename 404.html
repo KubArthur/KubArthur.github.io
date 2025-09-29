@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+        var l = window.location;
+        var repo = "";
+        window.location.replace(
+            repo + "/?redirect=" + encodeURIComponent(l.pathname + l.search + l.hash)
+        );
+    </script>
+</head>
+
+<body>
+    <h1>Redirecting…</h1>
+</body>
+
+</html>
