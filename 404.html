@@ -5,10 +5,7 @@
     <meta http-equiv="refresh" content="0; url=/" />
     <script>
         var l = window.location;
-        var repo = "/kubarthur.me";
-        if (!l.pathname.startsWith(repo)) {
-            repo = "";
-        }
+        var repo = "";
         window.location.replace(
             repo + "/?redirect=" + encodeURIComponent(l.pathname + l.search + l.hash)
         );
